@@ -1,0 +1,125 @@
+/* HEADER STYLE START */
+.site-header{
+    width: 100%;
+    padding: 28px 0;
+    background-image: linear-gradient(to right, #fff 56%, #800A7A 44%);
+    
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu-btn{
+        display: none;
+    }
+    
+    &__nav-list{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__nav-item:not(:nth-child(3)){
+        margin-right: 40px;
+    }
+
+    &__nav-item:nth-child(3){
+        margin-right: 78px;
+    }
+
+    &__nav-item:nth-child(4){
+       display: flex;
+       align-items: center;
+    }
+
+    &__nav-item:nth-child(5){
+        display: flex;
+        align-items: center;
+        padding-left: 39px;
+        border-left: 2px solid #9c9c9c;
+     }
+
+    &__nav-call__logo{
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+
+    &__nav-num{
+
+        & span{
+            display: inline-block;
+            margin-bottom: 9px;
+            color:#fff;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        & h4{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__nav-lock__logo{
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+
+    &__nav-link{
+        color: $colorPrimary;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+
+.nav-price{
+    &__title{
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__num{
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+/*  HEADER RESPONSIVE STYLE START */
+@media only screen and (max-width: 576px){
+
+    .site-header{
+        background-image: linear-gradient(to top, #fff 56%, #fff 44%);
+
+        &__logo-img{
+            width: 51px;
+            height: 54px;
+        }
+
+       &__nav{
+        display: none;
+       }
+
+       &__menu-btn{
+        display: block;
+        width: 24px;
+        height: 24px;
+        color: #282863;
+        border: none;
+        background-color: transparent;
+
+        & i{
+            font-size: 30px;
+        }
+       }
+    }
+
+}
+/*  HEADER RESPONSIVE STYLE END */
+
+/* HEADER STYLE END */

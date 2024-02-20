@@ -1,0 +1,101 @@
+/* DRINKS STYLE START  */ 
+.drinks{
+    width: 100%;
+    padding-bottom: 173px;
+    background-color: #fff;
+
+    &-title{
+
+        margin-bottom: 30px;
+        color: $colorPrimary;
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    &-list{
+
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+
+        &__item{
+
+            @include sweets-item;
+
+            &-pic{
+               @include sweets-pic
+            }
+        }
+
+        &__info{
+
+            &-price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &-title{
+                @include sweets-title
+            }
+
+            &-desc{
+                @include sweets-desc
+            }
+
+            &-num{
+                @include sweets-num
+            }
+
+            &-add{
+                @include sweets-add
+            }
+        }
+    }
+}
+/* DRINKS STYLE END  */ 
+
+/* DRINKS STYLE RESPONSIVE START  */
+@media only screen and (max-width:576px){
+    
+    .drinks{
+        margin-bottom: 45px;
+        padding-bottom: 0;
+        
+        &-title{
+            margin-bottom: 11px;
+            font-size: 36px;
+            line-height: normal; 
+            text-align: center;
+        }
+        
+        &-list__item{
+            @include sweets-item__responsive;
+            
+            &-pic{
+                @include sweets-pic__responsive
+            }
+        }
+        
+        &-list__info{
+            
+            &-title{
+              @include  sweets-title__responsive
+            }
+            
+            &-desc{
+                @include sweets-desc__responsive
+            }
+            
+            &-num{
+                 @include sweets-num__responsive;
+            }
+
+            &-add{
+               @include sweets-add__responsive
+            }
+        }
+    }
+}
+
+/* DRINKS STYLE RESPONSIVE END  */
